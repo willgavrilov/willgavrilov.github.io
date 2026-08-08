@@ -1,10 +1,12 @@
 /* =========================================
    MY HOUSE RENOVATIONS
-   Main Website Styles
-   ========================================= */
+   WEBSITE STYLES
+========================================= */
 
 
-/* ---------- BASIC SETTINGS ---------- */
+/* =========================================
+   BASIC SETTINGS
+========================================= */
 
 * {
     margin: 0;
@@ -43,560 +45,940 @@ img {
 }
 
 
-/* ---------- COLORS ---------- */
+/* =========================================
+   COLORS
+========================================= */
 
 :root {
+
     --green: #5b9f20;
+
     --dark-green: #3f7515;
+
     --light-green: #edf6e7;
+
     --dark: #263238;
+
     --gray: #667278;
+
     --light-gray: #f6f7f5;
+
     --white: #ffffff;
 }
 
 
-/* ---------- NAVIGATION ---------- */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .navbar {
+
     background: #ffffff;
+
     border-bottom: 1px solid #e8ece6;
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 }
 
+
 .nav-container {
+
     min-height: 90px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 30px;
 }
 
+
 .logo {
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    color: var(--dark);
-}
 
-.logo span {
-    color: var(--green);
-}
-
-nav {
     display: flex;
-    gap: 28px;
+
     align-items: center;
 }
 
+
+.logo img {
+
+    width: 210px;
+
+    height: auto;
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 28px;
+
+    align-items: center;
+}
+
+
 nav a {
+
     font-size: 15px;
+
     font-weight: 600;
+
     color: var(--dark);
+
     transition: 0.2s ease;
 }
 
+
 nav a:hover {
+
     color: var(--green);
 }
 
+
 .nav-button {
+
     background: var(--green);
+
     color: white;
+
     padding: 13px 20px;
+
     border-radius: 6px;
+
     font-weight: 700;
+
     font-size: 14px;
+
     transition: 0.2s ease;
 }
 
+
 .nav-button:hover {
+
     background: var(--dark-green);
 }
 
 
-/* ---------- HERO ---------- */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
+
     min-height: 680px;
+
     display: flex;
+
     align-items: center;
+
     background:
+
         linear-gradient(
             90deg,
             rgba(255,255,255,0.98) 0%,
             rgba(255,255,255,0.93) 42%,
             rgba(255,255,255,0.25) 100%
         ),
-        url("project1.png") center / cover no-repeat;
+
+        url("project1.png")
+        center / cover no-repeat;
 }
 
+
 .hero-content {
+
     display: flex;
+
     align-items: center;
 }
 
+
 .hero-text {
+
     max-width: 650px;
+
     padding: 80px 0;
 }
 
+
 .eyebrow {
+
     color: var(--green);
+
     font-size: 13px;
+
     font-weight: 800;
+
     letter-spacing: 2px;
+
     margin-bottom: 15px;
 }
 
+
 .hero h1 {
+
     font-size: clamp(45px, 6vw, 72px);
+
     line-height: 1.05;
+
     letter-spacing: -2px;
+
     color: var(--dark);
+
     margin-bottom: 25px;
 }
 
+
 .hero h1 span {
+
     color: var(--green);
+
     display: block;
 }
 
+
 .hero-description {
+
     font-size: 19px;
+
     color: var(--gray);
+
     max-width: 590px;
+
     margin-bottom: 32px;
 }
 
+
 .hero-buttons {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 14px;
 }
 
+
 .button {
+
     display: inline-block;
+
     padding: 15px 25px;
+
     border-radius: 6px;
+
     font-weight: 700;
+
     border: 2px solid transparent;
+
     transition: 0.2s ease;
 }
 
+
 .primary-button {
+
     background: var(--green);
+
     color: white;
 }
 
+
 .primary-button:hover {
+
     background: var(--dark-green);
+
     transform: translateY(-2px);
 }
 
+
 .secondary-button {
+
     background: white;
+
     color: var(--dark);
+
     border-color: #cfd7cc;
 }
 
+
 .secondary-button:hover {
+
     border-color: var(--green);
+
     color: var(--green);
 }
 
+
 .hero-phone {
+
     margin-top: 25px;
+
     color: var(--gray);
 }
 
+
 .hero-phone strong {
+
     color: var(--dark);
 }
 
 
-/* ---------- SECTION HEADINGS ---------- */
+/* =========================================
+   SECTION HEADINGS
+========================================= */
 
 .section-heading {
+
     max-width: 700px;
+
     margin: 0 auto 50px;
+
     text-align: center;
 }
 
+
 .section-heading h2 {
+
     font-size: clamp(34px, 5vw, 48px);
+
     line-height: 1.1;
+
     color: var(--dark);
+
     margin-bottom: 16px;
 }
 
+
 .section-heading p:last-child {
+
     color: var(--gray);
+
     font-size: 17px;
 }
 
 
-/* ---------- SERVICES ---------- */
+/* =========================================
+   SERVICES
+========================================= */
 
 .services {
+
     background: var(--light-gray);
 }
 
+
 .service-grid {
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 22px;
 }
 
+
 .service-card {
+
     background: white;
+
     padding: 32px;
+
     border-radius: 10px;
+
     border: 1px solid #e5eae2;
+
     transition: 0.25s ease;
 }
 
+
 .service-card:hover {
+
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(30, 50, 30, 0.09);
+
+    box-shadow:
+        0 15px 35px
+        rgba(30, 50, 30, 0.09);
 }
 
+
 .featured-service {
+
     border-top: 4px solid var(--green);
 }
 
+
 .service-icon {
+
     font-size: 34px;
+
     margin-bottom: 18px;
 }
 
+
 .service-card h3 {
+
     font-size: 21px;
+
     margin-bottom: 10px;
+
     color: var(--dark);
 }
 
+
 .service-card p {
+
     color: var(--gray);
+
     margin-bottom: 18px;
 }
 
+
 .service-card a {
+
     color: var(--green);
+
     font-weight: 700;
 }
 
 
-/* ---------- ABOUT ---------- */
+/* =========================================
+   ABOUT
+========================================= */
 
 .about {
+
     background: white;
 }
 
+
 .about-container {
+
     display: grid;
+
     grid-template-columns: 1.1fr 0.9fr;
+
     gap: 70px;
+
     align-items: center;
 }
 
+
 .about-text h2 {
+
     font-size: clamp(35px, 5vw, 52px);
+
     line-height: 1.1;
+
     margin-bottom: 22px;
+
     color: var(--dark);
 }
 
+
 .about-text p {
+
     color: var(--gray);
+
     margin-bottom: 18px;
+
     font-size: 17px;
 }
 
+
 .about-text .button {
+
     margin-top: 15px;
 }
 
+
 .about-features {
+
     background: var(--light-green);
+
     padding: 15px;
+
     border-radius: 12px;
 }
 
+
 .about-features div {
+
     background: white;
+
     padding: 24px;
+
     margin: 8px;
+
     border-radius: 7px;
 }
 
+
 .about-features strong {
+
     display: block;
+
     font-size: 18px;
+
     color: var(--dark);
+
     margin-bottom: 5px;
 }
 
+
 .about-features span {
+
     color: var(--gray);
 }
 
 
-/* ---------- OUR WORK ---------- */
+/* =========================================
+   PROJECT GALLERY
+========================================= */
 
 .work {
+
     background: var(--light-gray);
 }
 
-.photo-placeholder {
-    min-height: 430px;
-    border-radius: 12px;
+
+.projects {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.project-card {
+
+    background: white;
+
+    border-radius: 10px;
+
     overflow: hidden;
-    background:
-        linear-gradient(
-            rgba(38,50,56,0.55),
-            rgba(38,50,56,0.55)
-        ),
-        url("project1.png") center / cover no-repeat;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    border: 1px solid #e1e6df;
 
-.photo-placeholder div {
-    color: white;
-    padding: 30px;
-}
-
-.photo-placeholder span {
-    font-size: 45px;
-}
-
-.photo-placeholder h3 {
-    font-size: 28px;
-    margin: 10px 0;
-}
-
-.photo-placeholder p {
-    font-size: 16px;
+    transition: 0.25s ease;
 }
 
 
-/* ---------- ESTIMATE ---------- */
+.project-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(30, 50, 30, 0.12);
+}
+
+
+.project-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+.project-info {
+
+    padding: 25px;
+}
+
+
+.project-info h3 {
+
+    color: var(--dark);
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.project-info p {
+
+    color: var(--gray);
+}
+
+
+/* =========================================
+   ESTIMATE SECTION
+========================================= */
 
 .estimate {
+
     background: var(--dark);
+
     color: white;
 }
 
+
 .estimate-container {
+
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
     gap: 70px;
+
     align-items: start;
 }
 
+
 .estimate-text h2 {
-    font-size: clamp(35px, 5vw, 52px);
+
+    font-size:
+        clamp(35px, 5vw, 52px);
+
     line-height: 1.1;
+
     margin-bottom: 20px;
 }
 
-.estimate-text > p:not(.eyebrow) {
+
+.estimate-text >
+p:not(.eyebrow) {
+
     color: #c7d0d3;
+
     font-size: 17px;
+
     margin-bottom: 15px;
 }
 
+
 .contact-phone strong {
+
     color: #ffffff;
+
     font-size: 24px;
 }
 
+
 .estimate-form {
+
     background: white;
+
     padding: 35px;
+
     border-radius: 10px;
+
     color: var(--dark);
 }
 
+
 .estimate-form label {
+
     display: block;
+
     font-size: 14px;
+
     font-weight: 700;
+
     margin-bottom: 7px;
+
     margin-top: 18px;
 }
 
+
 .estimate-form label:first-child {
+
     margin-top: 0;
 }
+
 
 .estimate-form input,
 .estimate-form select,
 .estimate-form textarea {
+
     width: 100%;
+
     padding: 13px 14px;
-    border: 1px solid #d6ddd5;
+
+    border:
+        1px solid #d6ddd5;
+
     border-radius: 5px;
+
     font-family: inherit;
+
     font-size: 15px;
+
     background: white;
 }
+
 
 .estimate-form input:focus,
 .estimate-form select:focus,
 .estimate-form textarea:focus {
+
     outline: none;
+
     border-color: var(--green);
 }
 
+
 .estimate-form textarea {
+
     resize: vertical;
 }
 
+
 .form-button {
+
     width: 100%;
+
     border: none;
+
     cursor: pointer;
+
     margin-top: 22px;
+
     font-size: 16px;
 }
 
+
 .form-note {
+
     text-align: center;
+
     color: var(--gray);
+
     font-size: 13px;
+
     margin-top: 12px;
 }
 
 
-/* ---------- FOOTER ---------- */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
+
     background: #1c2529;
+
     color: white;
 }
 
+
 .footer-container {
+
     padding: 55px 0;
+
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
     gap: 40px;
 }
 
+
 .footer-container h3 {
+
     font-size: 22px;
+
     margin-bottom: 10px;
 }
 
+
 .footer-container p {
+
     color: #b9c2c5;
+
     margin-bottom: 6px;
 }
 
+
 .footer-bottom {
-    border-top: 1px solid #344045;
+
+    border-top:
+        1px solid #344045;
+
     text-align: center;
+
     padding: 20px;
+
     color: #9da8ac;
+
     font-size: 13px;
 }
 
 
-/* ---------- MOBILE ---------- */
+/* =========================================
+   TABLET
+========================================= */
 
 @media (max-width: 900px) {
 
     .nav-container {
+
         min-height: 75px;
     }
 
+
     nav {
+
         display: none;
     }
 
+
     .service-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
+
+    .projects {
+
+        grid-template-columns:
+            1fr;
+    }
+
 
     .about-container,
     .estimate-container {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
+
         gap: 40px;
     }
 
+
     .hero {
+
         min-height: 600px;
     }
+
 }
 
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 600px) {
 
     .section {
+
         padding: 65px 0;
     }
 
+
+    .logo img {
+
+        width: 160px;
+    }
+
+
     .nav-button {
-        padding: 10px 13px;
+
+        padding:
+            10px 13px;
+
         font-size: 12px;
     }
 
-    .logo {
-        font-size: 20px;
-    }
 
     .hero {
+
         min-height: 650px;
 
         background:
+
             linear-gradient(
                 rgba(255,255,255,0.92),
                 rgba(255,255,255,0.92)
             ),
-            url("project1.png") center / cover no-repeat;
+
+            url("project1.png")
+            center / cover no-repeat;
     }
+
 
     .hero-text {
-        padding: 50px 0;
+
+        padding:
+            50px 0;
     }
 
+
     .hero h1 {
+
         font-size: 44px;
     }
 
+
     .hero-description {
+
         font-size: 17px;
     }
 
+
     .hero-buttons {
+
         flex-direction: column;
     }
 
+
     .hero-buttons .button {
+
         text-align: center;
+
         width: 100%;
     }
 
+
     .service-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
     }
+
 
     .service-card {
+
         padding: 25px;
     }
+
+
+    .project-card img {
+
+        height: auto;
+    }
+
 
     .estimate-form {
+
         padding: 25px;
     }
 
+
     .footer-container {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
+
         gap: 25px;
     }
+
 }
