@@ -982,3 +982,62 @@ footer {
     }
 
 }
+/* =========================================
+   SHRINK HEADER WHEN SCROLLING
+========================================= */
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    transition: width 0.3s ease;
+}
+
+.nav-container {
+    transition: min-height 0.3s ease;
+}
+
+
+/* Normal size at top */
+
+.nav-container {
+    min-height: 90px;
+}
+
+.logo img {
+    width: 210px;
+}
+
+
+/* Smaller size after scrolling */
+
+.navbar.scrolled .nav-container {
+    min-height: 65px;
+}
+
+.navbar.scrolled .logo img {
+    width: 145px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        min-height: 75px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .navbar.scrolled .nav-container {
+        min-height: 58px;
+    }
+
+    .navbar.scrolled .logo img {
+        width: 125px;
+    }
+}
