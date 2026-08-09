@@ -579,15 +579,9 @@ nav a:hover {
 
 /* Make the two longer boxes span more space */
 
-.about-features div:nth-child(4) {
-
-    grid-column: span 1;
-}
-
-
+.about-features div:nth-child(4),
 .about-features div:nth-child(5) {
-
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 
