@@ -126,20 +126,22 @@ nav {
 
 
 nav a {
-
-    font-size: 15px;
-
-    font-weight: 600;
-
+    font-size: 14px;
+    font-weight: 700;
     color: var(--dark);
 
-    transition: 0.2s ease;
+    border: 1.5px solid #cfd7cc;
+    border-radius: 6px;
+
+    padding: 9px 16px;
+
+    transition: all 0.2s ease;
 }
 
-
 nav a:hover {
-
-    color: var(--green);
+    color: white;
+    background: var(--green);
+    border-color: var(--green);
 }
 
 
