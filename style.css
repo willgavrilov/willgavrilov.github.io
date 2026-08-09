@@ -501,27 +501,55 @@ nav a:hover {
 }
 
 
+/* =========================================
+   ABOUT FEATURES
+========================================= */
+
 .about-features {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
 
     background: var(--light-green);
 
-    padding: 15px;
+    padding: 16px;
 
     border-radius: 12px;
 }
 
 
+/* Individual boxes */
+
 .about-features div {
 
     background: white;
 
-    padding: 24px;
+    padding: 25px;
 
-    margin: 8px;
+    border-radius: 8px;
 
-    border-radius: 7px;
+    border: 1px solid #e4ebe0;
+
+    box-shadow: 0 3px 10px rgba(30, 50, 30, 0.04);
+
+    transition: all 0.2s ease;
 }
 
+
+/* Slight hover effect */
+
+.about-features div:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(30, 50, 30, 0.08);
+}
+
+
+/* Box titles */
 
 .about-features strong {
 
@@ -531,13 +559,77 @@ nav a:hover {
 
     color: var(--dark);
 
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 
 
+/* Box descriptions */
+
 .about-features span {
 
+    display: block;
+
     color: var(--gray);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* Make the two longer boxes span more space */
+
+.about-features div:nth-child(4) {
+
+    grid-column: span 1;
+}
+
+
+.about-features div:nth-child(5) {
+
+    grid-column: span 2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about-features {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-features div:nth-child(4),
+    .about-features div:nth-child(5) {
+
+        grid-column: span 1;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .about-features {
+
+        grid-template-columns: 1fr;
+
+        padding: 10px;
+    }
+
+    .about-features div:nth-child(4),
+    .about-features div:nth-child(5) {
+
+        grid-column: span 1;
+    }
+
 }
 
 
