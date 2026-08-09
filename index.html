@@ -8,7 +8,7 @@
     <title>My House Renovations | North Georgia Painting & Renovations</title>
 
     <meta name="description"
-        content="My House Renovations provides professional exterior and interior painting, siding repair, deck restoration, windows, flooring and home renovation services throughout North Georgia.">
+        content="My House Renovations provides professional exterior and interior painting, siding repair, deck restoration, windows and home renovation services throughout North Georgia.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,10 +29,10 @@
             </a>
 
             <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#work">Our Work</a>
-</nav>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#work">Our Work</a>
+            </nav>
 
             <a href="#estimate" class="nav-button">
                 Get a Free Estimate
@@ -65,8 +65,8 @@
 
                 <p class="hero-description">
                     Professional exterior and interior painting,
-                    siding repair, decks, windows, flooring and
-                    renovation services throughout North Georgia.
+                    siding repair, decks, windows and renovation
+                    services throughout North Georgia.
                 </p>
 
                 <div class="hero-buttons">
@@ -248,31 +248,6 @@
 
 
 
-                <!-- Flooring -->
-
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        🪵
-                    </div>
-
-                    <h3>
-                        Flooring
-                    </h3>
-
-                    <p>
-                        Upgrade your home's interior with professional
-                        flooring installation.
-                    </p>
-
-                    <a href="#estimate">
-                        Get an Estimate →
-                    </a>
-
-                </div>
-
-
-
                 <!-- Renovations -->
 
                 <div class="service-card">
@@ -348,6 +323,8 @@
             <div class="about-features">
 
 
+                <!-- Quality Work -->
+
                 <div>
 
                     <strong>
@@ -360,6 +337,8 @@
 
                 </div>
 
+
+                <!-- Professional Service -->
 
                 <div>
 
@@ -374,18 +353,23 @@
                 </div>
 
 
+                <!-- Clean Work Site -->
+
                 <div>
 
                     <strong>
-                        North Georgia
+                        Clean Work Site
                     </strong>
 
                     <span>
-                        Serving homeowners throughout the area.
+                        We believe a clean job site will yield the best
+                        possible results on each and every job.
                     </span>
 
                 </div>
 
+
+                <!-- Free Estimates -->
 
                 <div>
 
@@ -394,7 +378,11 @@
                     </strong>
 
                     <span>
-                        Tell us about your project and we'll be in touch.
+                        Tell us about your project, and we’ll be in touch.
+                        We value your time and believe that being on time
+                        matters. We’re committed to providing prompt,
+                        professional, and reliable service from the initial
+                        consultation through project completion.
                     </span>
 
                 </div>
@@ -563,6 +551,8 @@
                 id="estimate-form">
 
 
+                <!-- NAME -->
+
                 <label for="name">
                     Your Name
                 </label>
@@ -576,6 +566,8 @@
                 >
 
 
+
+                <!-- PHONE -->
 
                 <label for="phone">
                     Phone Number
@@ -591,34 +583,34 @@
 
 
 
-                <label for="time">
-                    Best Time to Call
+                <!-- WEEKDAY / WEEKEND -->
+
+                <label for="availability">
+                    When would you prefer a call?
                 </label>
 
                 <select
-                    id="time"
-                    name="time"
+                    id="availability"
+                    name="availability"
                     required>
 
                     <option value="">
-                        Select a time
+                        Select an option
                     </option>
 
-                    <option>
-                        Morning (8 AM - 12 PM)
+                    <option value="weekday">
+                        Weekday
                     </option>
 
-                    <option>
-                        Afternoon (12 PM - 4 PM)
-                    </option>
-
-                    <option>
-                        Evening (4 PM - 7 PM)
+                    <option value="weekend">
+                        Weekend
                     </option>
 
                 </select>
 
 
+
+                <!-- PROJECT DESCRIPTION -->
 
                 <label for="project">
                     What would you like done?
@@ -633,6 +625,8 @@
                 ></textarea>
 
 
+
+                <!-- SUBMIT -->
 
                 <button
                     type="submit"
@@ -728,17 +722,33 @@
 
     </footer>
 
-<script>
-    window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
 
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
-</script>
+
+    <!-- =========================
+         SHRINK HEADER ON SCROLL
+    ========================== -->
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+
+            const navbar =
+                document.querySelector(".navbar");
+
+            if (window.scrollY > 50) {
+
+                navbar.classList.add("scrolled");
+
+            } else {
+
+                navbar.classList.remove("scrolled");
+
+            }
+
+        });
+
+    </script>
+
 
 </body>
 
