@@ -149,7 +149,7 @@ nav a:hover {
             rgba(255,255,255,0.93) 42%,
             rgba(255,255,255,0.25) 100%
         ),
-        url("Project1.jpg")
+        url("Project11.jpg")
         center / cover no-repeat;
 }
 
@@ -623,7 +623,7 @@ footer {
                 rgba(255,255,255,0.92),
                 rgba(255,255,255,0.92)
             ),
-            url("Project1.jpg")
+            url("Project11.jpg")
             center / cover no-repeat;
     }
 
