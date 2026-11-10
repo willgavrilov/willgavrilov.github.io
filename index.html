@@ -378,70 +378,76 @@
             </div>
 
 
-            <form class="estimate-form" id="estimate-form">
 
-                <label for="name">Your Name</label>
+<form
+    class="estimate-form"
+    id="estimate-form"
+    action="https://formsubmit.co/mhr9186355450@gmail.com"
+    method="POST"
+>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="John Smith"
-                    required
-                >
+    <!-- Email settings -->
+    <input type="hidden" name="_subject" value="New Estimate Request - My House Renovations">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none">
 
+    <label for="name">Your Name</label>
 
-                <label for="phone">Phone Number</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="John Smith"
+        required
+    >
 
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="(555) 555-5555"
-                    required
-                >
+    <label for="phone">Phone Number</label>
 
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="(555) 555-5555"
+        required
+    >
 
-                <label for="availability">
-                    When would you prefer a call?
-                </label>
+    <label for="availability">
+        When would you prefer a call?
+    </label>
 
-                <select
-                    id="availability"
-                    name="availability"
-                    required
-                >
+    <select
+        id="availability"
+        name="availability"
+        required
+    >
+        <option value="">Select an option</option>
+        <option value="weekday">Weekday</option>
+        <option value="weekend">Weekend</option>
+    </select>
 
-                    <option value="">Select an option</option>
-                    <option value="weekday">Weekday</option>
-                    <option value="weekend">Weekend</option>
+    <label for="project">What would you like done?</label>
 
-                </select>
+    <textarea
+        id="project"
+        name="project"
+        rows="5"
+        placeholder="Tell us about your project..."
+        required
+    ></textarea>
 
+    <button
+        type="submit"
+        class="button primary-button form-button"
+    >
+        Request a Free Estimate
+    </button>
 
-                <label for="project">What would you like done?</label>
+    <p class="form-note">
+        We'll contact you at your preferred time.
+    </p>
 
-                <textarea
-                    id="project"
-                    name="project"
-                    rows="5"
-                    placeholder="Tell us about your project..."
-                    required
-                ></textarea>
+</form>
 
-
-                <button
-                    type="submit"
-                    class="button primary-button form-button"
-                >
-                    Request a Free Estimate
-                </button>
-
-                <p class="form-note">
-                    We'll contact you at your preferred time.
-                </p>
-
-            </form>
 
         </div>
     </section>
